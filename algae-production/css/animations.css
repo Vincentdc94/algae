@@ -1,0 +1,296 @@
+/* Bubble animation */
+
+@keyframes bubbler{
+  0%{top: 100%; }
+  1%{transform: scale(1, 1); opacity: 1;}
+  100%{top: 1%; opacity: 0; transform: scale(1, 1)}
+}
+
+.bubble{
+  position: absolute;
+  z-index:1;
+  transform: scale(0, 0);
+  animation-name: bubbler;
+  animation-delay: 5s;
+  animation-duration: 10s;
+}
+
+/* Home to About animation code */
+
+@keyframes toAbout{
+  from{
+    left: 100%;
+  }
+  to{
+    left: 0px; 
+  }
+}
+
+.animateToAbout{
+  z-index: 1;
+  animation-name: toAbout;
+  animation-duration: 1s;
+  display: none;
+  position: absolute;
+  animation-fill-mode: both;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+
+@keyframes fromHome{
+  from{
+    right: 0px;
+  }
+  to{
+    right: 100%;
+    display: none;
+  }
+}
+
+.animateFromHome{
+  animation-name: fromHome;
+  animation-duration: 1s;
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* About to climate animation code */
+
+@keyframes toClimate{
+  from{
+    top: 100%;
+  }
+  to{
+    top: 0px; 
+  }
+}
+
+.animateToClimate{
+  z-index: 1;
+  animation-name: toClimate;
+  animation-duration: 1s;
+  display: none;
+  position: absolute;
+  background: white;
+  animation-fill-mode: both;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes fromAbout{
+  from{
+    bottom: 0px;
+  }
+  to{
+    bottom: 100%;
+    display: none;
+  }
+}
+
+.animateFromAbout{
+  animation-name: fromAbout;
+  animation-duration: 1s;
+  display: none;
+  position: absolute;
+  background: white;
+  animation-fill-mode: both;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes fromClimate{
+  from{
+    left: 0px;
+  }
+  to{
+    left: 100%;
+    display: none;
+  }
+}
+
+.animateFromClimate{
+  animation-name: fromClimate;
+  animation-duration: 1s;
+  display: none;
+  position: absolute;
+  display: none;
+  animation-fill-mode: both;
+  background: white;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes toStats{
+  from{
+    right: 100%;
+  }
+  to{
+    right: 0px;
+  }
+}
+
+.animateToStats{
+  z-index: 1;
+  animation-name: toStats;
+  animation-duration: 1s;
+  display: none;
+  position: absolute;
+  animation-fill-mode: both;
+  background: white;
+  width: 100%;
+  height: 100%;
+}
+
+
+@keyframes fromStats{
+  from{
+    bottom: 0px;
+  }
+  to{
+    bottom: 100%;
+    display: none;
+  }
+}
+
+.animateFromStats{
+  animation-name: fromStats;
+  animation-duration: 1s;
+  display: none;
+  position: absolute;
+  animation-fill-mode: both;
+  background: white;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes ToEnd{
+  from{
+    top: 100%;
+  }
+  to{
+    top: 0%;
+  }
+}
+
+
+.animateToEnd{
+  animation-name: ToEnd;
+  animation-duration: 1s;
+  position: absolute;
+  display: none;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  background: white;
+  width: 100%;
+  height: 100%;
+}
+
+/* Menu related animations */
+
+@keyframes fromMenu{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.animationFromMenu{
+  animation-name: fromMenu;
+  animation-duration: .6s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Climate page animations */
+@keyframes leftArrow{
+  0%{
+    transform: translateX(0px);
+  }
+  50%{
+    transform: translateX(-10px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+.animationLeftArrow{
+  animation-name: leftArrow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.42, 0, .58, 1)
+}
+
+@keyframes rightArrow{
+  0%{
+    transform: translateX(0px);
+  }
+  50%{
+    transform: translateX(10px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+.animationRightArrow{
+  animation-name: rightArrow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.42, 0, .58, 1)
+}
+
+/* CO2 */
+
+@keyframes co2-anim{
+  from{
+    top: 50px;
+    opacity: 1;
+  }
+  to{
+    top: 100px;
+    opacity: 0;
+  }
+}
+
+.co2-anim-1{
+  animation-name: co2-anim;
+  animation-duration: 2.4s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+.co2-anim-2{
+  animation-name: co2-anim;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+.co2-anim-3{
+  animation-name: co2-anim;
+  animation-duration: 1.8s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+/* Carousel */
+
+@keyframes fade-in{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.fade-in{
+  animation-name: fade-in;
+  animation-duration: 1s;
+}

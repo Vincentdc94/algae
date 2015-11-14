@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="css/animations.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <title>Algae</title>
+  </head>
+  <body>
+    <div class="menu-button black" id="menu-button">
+        <img src="img/menu.svg" alt="menu button icon" class="menu-icon"/>
+        <h4 class="menu-label">MENU</h4>
+    </div>
+    <nav id="menu-nav">
+      <ul>
+        <li><a href="#" id="nav-home">Home</a></li>
+        <li><a href="#" id="nav-about">About</a></li>
+        <li><a href="#" id="nav-climate">Climate</a></li>
+        <li><a href="#" id="nav-stats">Statistics</a></li>
+        <li><a href="#" id="close-menu"><img src="img/close.svg" class="nav-close" id="nav-close"/></a></li>
+      </ul>
+    </nav>
+    <div class="page" id="home-page">
+      <div class="overlay">
+        <div class="title-holder">
+          <img src="img/alg.png"/>
+          <h1>Algae</h1>
+          <h2>"The lungs of the sea"</h2>
+          <div class="clear-space"></div>
+          <a href="#" id="about" class="action action-go">GO</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page" id="about-page">
+      <div class="page-title-holder">
+        <img src="img/alg.png"/><br />
+        <div class="line"></div><h1>About</h1><div class="line"></div>
+
+      </div>
+      <div class="content">
+        <p>Algae is one of the most dominant lifeforms on earth. It comes in all sizes and colors. You can even see them from space if you look well!</p>
+
+        <div class="gallery-holder">
+
+          <div class="gallery-btn gallery-btn-left"><img src="img/gallery_arrow_left.svg" alt="slide to left" height="60px"></div>
+
+        <div class="gallery">
+            <div class="item"><img src="img/gallery/draad.jpg" alt="lange draad"></div>
+            <div class="item"><img src="img/gallery/volvox.jpg" alt="volvox"></div>
+            <div class="item"><img src="img/gallery/algae-apium.jpg" alt="apium algae"></div>
+            <div class="item"><img src="img/gallery/algae-pool.jpg" alt="algae pool"></div>
+        </div>
+
+        <div class="gallery-btn gallery-btn-right">
+          <img src="img/gallery_arrow_right.svg" alt="slide to right" height="60px"></div>
+        </div>
+
+
+        <div class="button-holder">
+          <a href="#" id="climate" class="action action-next">NEXT</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="page" id="climate-page">
+
+      <div class="page-title-holder">
+        <img src="img/alg.png"/><br />
+        <div class="line"></div><h1>Climate</h1><div class="line"></div>
+      </div>
+      <div class="content">
+        <p>
+          Algae are responsible for absorbing CO2 and storing it underground when they die. This reduces the CO2 count in the atmosphere alot.
+        </p>
+        <div class="algae-illustration">
+           <span class="co2-item co2-anim-1">CO2</span>
+           <span class="co2-item co2-anim-2">CO2</span>
+           <span class="co2-item co2-anim-3">CO2</span>
+           <div>
+             <img src="img/alg_real.svg" alt="alg"/>
+           </div>
+
+        </div>
+        <div class="arrow-holder">
+          <img src="img/arrow_left.svg" class="arrow arrow-left animationLeftArrow"/>
+          <img src="img/arrow_right.svg" class="arrow arrow-right animationRightArrow"/>
+        </div>
+        <div class="earth-illustration">
+          <img src="img/earth.svg" alt="aarde picture"/>
+        </div>
+
+        <div class="button-holder">
+          <a href="#" id="stats" class="action action-next">NEXT</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="page" id="stats-page">
+
+     <div class="page-title-holder">
+        <img src="img/alg.png"/><br />
+        <div class="line"></div><h1>Statistics</h1><div class="line"></div>
+     </div>
+      <div class="content">
+        <p>To stress the importance of algae here are some important statistics</p>
+        <div class="circle-holder">
+          <div class="circle-item">
+           <div id="bio-pomp" class="circle">
+             <strong>0%</strong>
+             <span></span>
+           </div>
+           <p class="smaller">
+             Take algae from our CO2 emissions
+           </p>
+          </div>
+          <div class="circle-item">
+             <div id="oxygen" class="circle">
+               <strong>0%</strong>
+               <span></span>
+             </div>
+             <p class="smaller">
+               Oxygen from algae in the air
+             </p>
+          </div>
+        </div>
+
+        <div class="button-holder">
+          <a href="#" id="end" class="action action-next">NEXT</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="js/vendor/circle-progress.js"></script>
+    <script src="js/progress.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/bubbles.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/pages.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

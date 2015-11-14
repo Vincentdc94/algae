@@ -1,0 +1,354 @@
+/*
+ * Seablue: ...
+ *
+ */
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic|Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Open+Sans+Condensed:300,300italic,700);
+
+body{
+  margin: 0; padding: 0;
+  background: white;
+  overflow: hidden;
+}
+
+p{
+  font-family: 'Fira Sans';
+  font-size: 21px;
+}
+
+.circle-animation-progress{color: white;}
+
+.page{display: none; position: absolute; width: 100%;}
+
+.smaller{ font-size: 16px;}
+
+.nav-close{
+  margin-left: -30px;
+  margin-right: -20px;
+  background: #333;
+  height: 30px;
+  padding: 20px;
+  float: right;
+  transition: all .3s ease;
+}
+
+.nav-close:hover{
+  background: #555;
+  transform: rotateZ(90deg);
+}
+
+nav{
+  z-index: 3;
+  position: absolute;
+  background: #3d3d3d;
+  color: white;
+  font-family: 'Fira Sans';
+  font-size: 14px;
+  left: 140px;
+  display: none;
+}
+
+nav ul{
+  margin: 0; 
+  padding: 0px 10px;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+nav ul li a{
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 70px;
+  padding: 0px 25px;
+  transition: color .5s ease;
+}
+
+nav ul li a:hover{
+  color: #777;
+}
+
+#home-page{
+  display: block;
+  background: url('../img/algae-bg.jpg') center;
+  background-size: cover;
+}
+
+#end-page{
+  height: 50%;
+}
+
+.overlay{
+  background: rgba(0, 0, 0, .8);
+}
+
+.menu-button{
+  position: absolute;
+  z-index: 1000;
+  font-family:Open Sans;
+  font-weight:800;
+  color: #72cfad;
+  height: 70px;
+  display: inline-block;
+  padding-right: 20px;
+  transition: all 5s ease;
+}
+
+.menu-button:hover{
+  cursor: pointer;
+  color: #4fa787;
+  fill: #4fa787;
+}
+
+.menu-icon{
+  padding: 0; margin: 0;
+  float: left;
+  padding: 15px;
+}
+
+
+.menu-label{
+  padding: 0; margin: 0;
+  font-family: 'Fira Sans';
+  text-transform: uppercase;
+  font-weight: 500;
+  float: left;
+  line-height: 70px;
+}
+
+.black{
+  background: #333;
+}
+
+
+.title-holder{
+  position: relative;
+  top: 25%;
+  text-align: center;
+}
+
+.title-holder img{
+  text-align:center;
+  display:inline-block;
+}
+
+.title-holder h1{
+  margin: 0; padding: 0;
+  font-family: 'Fira Sans';
+  font-size: 94px;
+  color: #9affda;
+  text-transform:uppercase;
+}
+
+.title-holder h2{
+  margin: 0; padding: 0;
+  font-family: 'Open Sans Condensed';
+  font-style: italic;
+  font-weight: 100;
+  font-size:38px;
+  color:white;
+}
+
+.page-title-holder{
+  padding: 50px;
+  text-align: center;
+}
+
+.page-title-holder h1{
+  margin: 0; padding: 15px 0px;
+  font-family: 'Fira Sans';
+  font-weight: 800;
+  font-size: 68px;
+  color: #333;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.content{
+  text-align: center;
+}
+
+
+.gallery-holder{
+  display: inline-block;
+}
+
+.gallery{
+  float: left;
+}
+
+.gallery-btn{
+  margin: 0;
+  padding: 0;
+  float: left;
+  line-height: 300px;
+}
+
+.gallery-btn:hover{
+  cursor: pointer;
+}
+
+.gallery-btn-left{
+  margin-right: 50px;
+}
+
+.gallery-btn-right{
+  margin-left: 50px;
+}
+
+.item{
+  display: inline-block;
+}
+
+.item img{
+  height: 250px;
+  margin: 10px;
+}
+
+
+.line{
+  margin: 20px 15px;
+  height: 3px;
+  background: #555;
+  display: inline-block;
+  width: 45px;
+}
+
+.clear-space{
+  height: 50px;
+}
+
+.algae-illustration{
+  display: inline-block;
+  text-align: center;
+}
+
+.co2-item{
+  color: #888;
+  font-family: 'Open Sans';
+  font-weight: 900;
+  position: relative;
+  font-size: 21px;
+  top: 50px;
+}
+
+.arrow-holder{
+  display: inline-block;
+  padding: 75px 60px;;
+}
+
+.arrow-left{
+  display: block;
+  height: 50px;
+}
+
+.arrow-right{
+  display: block;
+  height: 50px;
+}
+
+.earth-illustration{
+  display: inline-block;
+}
+
+.button-holder{
+  display: block;
+  padding: 80px;
+}
+
+.action{
+  font-family: 'Open Sans Condensed';
+  font-weight: 500;
+  font-size: 21px;
+  text-decoration:none;
+  padding: 8px 38px;
+  border-radius:3px;
+  display: inline;
+}
+
+.action-go{
+  border: 2px solid aquamarine;
+  color: aquamarine;
+  transition: background 1s ease;
+}
+
+.action-next{
+  border: 2px solid #333;
+  color: white;
+  background: #333;
+  transition: background .4s ease;
+  display: inline;
+}
+
+.action-go:hover{
+  background:aquamarine;
+  color: rgba(0, 0, 0, .9)
+}
+
+.action-next:hover{
+  border: 2px solid #555;
+  color: white;
+  background: #555;
+}
+
+.circle-holder{
+  display: block;
+  width: 560px;
+  margin: auto;
+  margin-top: 50px;
+  height: 270px;
+}
+
+.circle-item{
+  float: left;
+  display: inline-block;
+  margin: 15px;
+}
+
+.circle-item p{
+  background: #666;
+  color: white;
+  padding: 10px;
+}
+
+.circle {
+    width: 150px;
+    margin: 6px 6px 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.circle canvas {
+    vertical-align: top;
+}
+
+.circle strong{
+  position: absolute;
+  top: 5px;
+  left: 0px;    
+  width: 100%;
+  text-align: center;
+  line-height: 150px;
+  font-size: 30px;
+  font-family: 'Fira Sans';
+}
+
+.circle strong i {
+  font-style: normal;
+  font-size: 0.6em;
+  font-weight: normal;
+  font-family: 'Fira Sans';
+}
+
+.circle span{
+  width: 120px;
+  text-align: center;
+  font-family: 'Fira Sans';
+}
+
+
+
+
